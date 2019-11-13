@@ -109,7 +109,7 @@ const limit = process.argv[3] || 5;
 // Store all potentially malicious values in an array.
 const values = [`%${cohortName}%`, limit];
 
-
+pool.query(queryString, values);
 /*
 pool.query(queryString, values);
 psql receives the query an user input separartely, it then uses user data (values) as data within the query rather than part of the query
